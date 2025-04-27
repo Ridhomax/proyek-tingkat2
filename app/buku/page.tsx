@@ -1,5 +1,9 @@
-export default function buku(){
-    return(
-        <h1>Penjual 2</h1>
-    )
+import HeroSectionOne from "@/components/HeroSectionOne";
+
+export default function buku() {
+  return (
+    <main>
+      <HeroSectionOne />
+    </main>
+  );
 }

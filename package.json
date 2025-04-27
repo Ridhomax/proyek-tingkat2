@@ -11,6 +11,7 @@
   "dependencies": {
     "@tabler/icons-react": "^3.31.0",
     "clsx": "^2.1.1",
+    "cobe": "^0.6.3",
     "jsx": "^0.9.89",
     "motion": "^12.9.2",
     "next": "15.3.1",
