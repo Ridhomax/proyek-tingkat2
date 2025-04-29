@@ -95,14 +95,12 @@ export default function Home() {
       </MobileNav>
       <div className="pt-6">
       <div className="container mx-auto px-4 text-left">
-        <TracingBeam>
           {dummyContent.map((item, index) => (
             <div key={`content-${index}`} className="mb-10">
               <CarouselDemo/>;
               <AppleCardsCarouselDemo />
             </div>
           ))}
-        </TracingBeam>
       </div>
     </div>
     </Navbar>      
