@@ -1,7 +1,40 @@
 "use client";
+import { SignupFormDemo } from "@/components/SignupFormDemo";
 import React, { useState } from "react";
+import {
+  Navbar,
+  NavBody,
+  NavItems,
+  MobileNav,
+  NavbarLogo,
+  NavbarButton,
+  MobileNavHeader,
+  MobileNavToggle,
+  MobileNavMenu,
+} from "@/components/ui/resizable-navbar";
+import Link from "next/link";
+
+
 
 export default function Signup() {
+
+  const navItems = [
+    {
+      name: "Features",
+      link: "#features",
+    },
+    {
+      name: "Pricing",
+      link: "#pricing",
+    },
+    {
+      name: "Contact",
+      link: "#contact",
+    },
+  ];
+
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -12,32 +45,76 @@ export default function Signup() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
-      <form onSubmit={handleSignup} className="bg-white p-8 rounded-xl shadow-md w-full max-w-md">
-        <h2 className="text-2xl font-bold mb-6">Sign Up</h2>
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
-          className="w-full mb-4 p-3 border rounded"
-          required
-        />
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
-          className="w-full mb-6 p-3 border rounded"
-          required
-        />
-        <button
-          type="submit"
-          className="w-full bg-green-600 text-white p-3 rounded hover:bg-green-700 transition"
-        >
-          Sign Up
-        </button>
-      </form>
+
+    <div className="relative w-full">
+      <Navbar>
+        {/* Desktop Navigation */}
+        <NavBody>
+          <Link href="/">
+            <NavbarLogo />
+          </Link>
+
+          <NavItems items={navItems} />
+          <div className="flex items-center gap-4">
+            <Link href="/signup">
+              <NavbarButton variant="secondary">Login</NavbarButton>
+            </Link>
+            <NavbarButton variant="primary">Book a call</NavbarButton>
+          </div>
+        </NavBody>
+
+        {/* Mobile Navigation */}
+        <MobileNav>
+          <MobileNavHeader>
+            <NavbarLogo />
+            <MobileNavToggle
+              isOpen={isMobileMenuOpen}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            />
+          </MobileNavHeader>
+
+          <MobileNavMenu
+            isOpen={isMobileMenuOpen}
+            onClose={() => setIsMobileMenuOpen(false)}
+          >
+            {navItems.map((item, idx) => (
+              <a
+                key={`mobile-link-${idx}`}
+                href={item.link}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="relative text-neutral-600 dark:text-neutral-300"
+              >
+                <span className="block">{item.name}</span>
+              </a>
+            ))}
+            <div className="flex w-full flex-col gap-4">
+              <NavbarButton
+                onClick={() => setIsMobileMenuOpen(false)}
+                variant="primary"
+                className="w-full"
+              >
+                Login
+              </NavbarButton>
+              <NavbarButton
+                onClick={() => setIsMobileMenuOpen(false)}
+                variant="primary"
+                className="w-full"
+              >
+                Book a call
+              </NavbarButton>
+            </div>
+          </MobileNavMenu>
+        </MobileNav>
+        <div className="mt-10">
+          <SignupFormDemo />
+        </div>
+      </Navbar>
+
+      {/* Navbar */}
     </div>
+
+
   );
 }
+
+
