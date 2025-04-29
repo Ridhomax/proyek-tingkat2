@@ -11,7 +11,7 @@ export function AppleCardsCarouselDemo() {
   return (
     <div className="w-full h-full py-20">
       <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-        Get to know your iSad.
+        Pilihan tepat membuat keutungan dan keyemanan.
       </h2>
       <div className="w-full overflow-x-auto">
     <Carousel items={cards} />
@@ -30,7 +30,7 @@ const DummyContent = () => {
         >
           <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
             <span className="font-bold text-neutral-700 dark:text-neutral-200">
-              Ryan adalah anak yang rajin
+              Property Liban Group
             </span>{" "}
             Keep a journal, quickly jot down a grocery list, and take amazing
             class notes. Want to convert those notes to text? No problem.
@@ -52,26 +52,26 @@ const DummyContent = () => {
 
 const data = [
   {
-    category: "Kerudung",
-    title: "Buat perang.",
+    category: "KIOS",
+    title: "TAMAN RAYA",
     src: "https://i.imgur.com/Oui73K8.jpeg",
     content: <DummyContent />,
   },
   {
-    category: "Productivity",
-    title: "Enhance your productivity.",
+    category: "KOST",
+    title: "BOTANIA GARDEN.",
     src: "https://i.imgur.com/jNahlD9.jpeghttps://i.imgur.com/jNahlD9.jpeg",
     content: <DummyContent />,
   },
   {
-    category: "Product",
-    title: "Launching the new Apple Vision Pro.",
+    category: "KOST",
+    title: "BOTANIA GARDEN.",
     src: "https://i.imgur.com/RDO82tk.jpeg",
     content: <DummyContent />,
   },
   {
-    category: "Product",
-    title: "Maps for your iPhone 15 Pro Max.",
+    category: "KOS",
+    title: "BOTANIA GARDEN.",
     src: "https://i.imgur.com/vrRg3jb.jpeg",
     content: <DummyContent />,
   },
