@@ -105,7 +105,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
           <div
             className={cn(
               "flex flex-row justify-start gap-4 pl-4",
-              "mx-auto", // remove max-w-4xl if you want the carousel to span the full width of its container
+              "mx-auto max-w-7xl", // remove max-w-4xl if you want the carousel to span the full width of its container
             )}
           >
             {items.map((item, index) => (
@@ -132,7 +132,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             ))}
           </div>
         </div>
-        <div className="mr-10 flex justify-end gap-2">
+        <div className="mr-10 flex gap-2">
           <button
             className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
             onClick={scrollLeft}
@@ -183,11 +183,7 @@ export const Card = ({
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
-  if (containerRef.current) {
-    if (containerRef.current) {
-      useOutsideClick(containerRef, () => handleClose());
-    }
-  }
+  useOutsideClick(containerRef, () => handleClose());
 
   const handleOpen = () => {
     setOpen(true);
@@ -263,7 +259,6 @@ export const Card = ({
         <BlurImage
           src={card.src}
           alt={card.title}
-          fill
           className="absolute inset-0 z-10 object-cover"
         />
       </motion.button>
