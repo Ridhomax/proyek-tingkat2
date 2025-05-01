@@ -15,6 +15,11 @@ import {
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
+import { TextGenerateEffectDemo } from "@/components/TextGenerateEffectDemo";
+import { HeroScrollDemo } from "@/components/HeroScrollDemo";
+import { BackgroundGradient } from "@/components/ui/background-gradient";
+import { BackgroundGradientDemo } from "@/components/BackgroundGradientDemo";
+
 
 
 export default function Home() {
@@ -95,13 +100,17 @@ export default function Home() {
         </MobileNav>
         <div className="pt-6">
           <div className="container mx-auto px-4 text-left">
-
             <CarouselDemo />
+            <HeroScrollDemo/>
+            <TextGenerateEffectDemo/>
             <AppleCardsCarouselDemo />
-
+            <div className=" flex flex-col items-center justify-center mt-10">
+            <BackgroundGradientDemo/>
+            </div>
           </div>
         </div>
       </Navbar>
+      
 
       {/* Navbar */}
     </div>

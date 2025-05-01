@@ -1,9 +1,10 @@
-import HeroSectionOne from "@/components/HeroSectionOne";
+import { FileUploadDemo } from "@/components/FileUploadDemo";
 
-export default function buku() {
+
+export default function properties() {
   return (
     <main>
-      <HeroSectionOne />
+      <FileUploadDemo/>
     </main>
   );
 }
