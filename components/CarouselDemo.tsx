@@ -5,18 +5,22 @@ export function CarouselDemo() {
   const slideData = [
     {
       title: "Taman Raya",
+      button: "Learn More",
       src: "https://i.imgur.com/Oui73K8.jpeg",
     },
     {
       title: "Botania Garden Tahap 2",
+      button: "Learn More",
       src: "https://i.imgur.com/jNahlD9.jpeg",
     },
     {
       title: "Botania Garden Tahap 1",
+      button: "Learn More",
       src: "https://i.imgur.com/RDO82tk.jpeg",
     },
     {
       title: "Taman Raya",
+      button: "Learn More",
       src: "https://i.imgur.com/Oui73K8.jpeg",
     },
   ];

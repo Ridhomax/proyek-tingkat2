@@ -18,11 +18,11 @@ export function HeroScrollDemo() {
         }
       >
         <img
-          src={`https://i.imgur.com/NgNRUsZ.png`}
+          src={`https://i.imgur.com/jm3Ej96.png`}
           alt="hero"
           height={720}
-          width={1440}
-          className="mx-auto rounded-2xl object-cover h-full object-left-top"
+          width={1400}
+          className="mx-auto rounded-2xl object-cover h-full object-center-top"
           draggable={false}
         />
       </ContainerScroll>
