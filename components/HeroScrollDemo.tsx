@@ -18,10 +18,10 @@ export function HeroScrollDemo() {
         }
       >
         <img
-          src={`/linear.webp`}
+          src={`https://i.imgur.com/NgNRUsZ.png`}
           alt="hero"
           height={720}
-          width={1400}
+          width={1440}
           className="mx-auto rounded-2xl object-cover h-full object-left-top"
           draggable={false}
         />
