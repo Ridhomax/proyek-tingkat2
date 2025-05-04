@@ -27,11 +27,11 @@ export default function Home() {
 
   const navItems = [
     {
-      name: "Features",
+      name: "Home",
       link: "#features",
     },
     {
-      name: "Pricing",
+      name: "Propoerties",
       link: "#pricing",
     },
     {

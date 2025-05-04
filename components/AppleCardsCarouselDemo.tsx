@@ -21,7 +21,7 @@ export function AppleCardsCarouselDemo() {
 const DummyContent = () => {
   return (
     <>
-      {[...new Array(3).fill(1)].map((_, index) => {
+      {[...new Array(1).fill(1)].map((_, index) => {
         return (
           <div
             key={"dummy-content" + index}
@@ -29,16 +29,29 @@ const DummyContent = () => {
           >
             <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
               <span className="font-bold text-neutral-700 dark:text-neutral-200">
-                The first rule of Apple club is that you boast about Apple club.
+                Peraturan Kost / Kios Liban Group.
               </span>{" "}
-              Keep a journal, quickly jot down a grocery list, and take amazing
-              class notes. Want to convert those notes to text? No problem.
-              Langotiya jeetu ka mara hua yaar is ready to capture every
-              thought.
+              <br />
+              1. Tamu:
+              <br />
+              - Dilarang menerima tamu di dalam kos tanpa izin dari pengelola.
+              - Tamu yang diizinkan hanya boleh berada di ruang tamu dan tidak diperbolehkan masuk ke dalam kamar penghuni.
+              <br />
+              2. Kebersihan dan Pengelolaan Sampah:
+              <br />
+              - Dilarang memiliki tong sampah di dalam kamar atau area kos, kecuali yang telah disediakan di tempat tertentu.
+              - Penghuni kos diharapkan untuk membuang sampah pada tempat yang telah ditentukan dan mengikuti jadwal pembersihan.
+              <br />
+              3. Penyimpanan Barang:
+              <br />
+              - Semua barang milik penghuni kos harus disimpan di kamar masing-masing.
+              - Penghuni kos bertanggung jawab atas keamanan dan kerapian barang-barang pribadi.
+
+              Pastikan untuk mempertimbangkan kebutuhan dan kenyamanan penghuni kos saat membuat peraturan. Jika perlu, kamu bisa melakukan penyesuaian untuk meningkatkan kepatuhan dan kenyamanan bersama..
             </p>
             <img
-              src="https://assets.aceternity.com/macbook.png"
-              alt="Macbook mockup from Aceternity UI"
+              src="https://i.imgur.com/jm3Ej96.png"
+              alt="Liban Group"
               height="500"
               width="500"
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
@@ -52,39 +65,39 @@ const DummyContent = () => {
 
 const data = [
   {
-    category: "Artificial Intelligence",
-    title: "You can do more with AI.",
+    category: "Taman Raya ",
+    title: "Sewa Kios.",
     src: "https://i.imgur.com/Oui73K8.jpeg",
     content: <DummyContent />,
   },
   {
-    category: "Productivity",
-    title: "Enhance your productivity.",
+    category: "Botania Garden",
+    title: "Sewa Kos.",
     src: "https://i.imgur.com/jNahlD9.jpeg",
     content: <DummyContent />,
   },
   {
-    category: "Product",
-    title: "Launching the new Apple Vision Pro.",
+    category: "Botania Garden", 
+    title: "Sewa Kos.",
     src: "https://i.imgur.com/RDO82tk.jpeg",
     content: <DummyContent />,
   },
 
   {
-    category: "Product",
-    title: "Maps for your iPhone 15 Pro Max.",
+    category: "Botania Garden",
+    title: "Sewa Kos.",
     src: "https://i.imgur.com/RDO82tk.jpeg",
     content: <DummyContent />,
   },
   {
-    category: "iOS",
-    title: "Photography just got better.",
+    category: "Botania Garden",
+    title: "Sewa Kos.",
     src: "https://i.imgur.com/jNahlD9.jpeg",
     content: <DummyContent />,
   },
   {
-    category: "Hiring",
-    title: "Hiring for a Staff Software Engineer",
+    category: "Taman Raya",
+    title: "Sewa Kios.",
     src: "https://i.imgur.com/Oui73K8.jpeg",
     content: <DummyContent />,
   },

@@ -4,29 +4,29 @@ import { BackgroundGradient } from "@/components/ui/background-gradient";
 
 const products = [
   {
-    title: "Air Jordan 4 Retro Reimagined",
+    title: "Kos Botania Garden",
     description:
-      "The Air Jordan 4 Retro Reimagined Bred will release on Saturday, February 17, 2024.",
+      "Botania, Belian, Kec. Batam Kota, Kota Batam, Kepulauan Riau 29462.",
     image: "https://i.imgur.com/RDO82tk.jpeg",
-    price: "$100",
+    price: "Rp. 850.000,00",
   },
   {
-    title: "Air Jordan 1 High OG",
+    title: "Kios Taman Raya",
     description: "A classic silhouette with modern comfort.",
     image: "https://i.imgur.com/Oui73K8.jpeg",
-    price: "$120",
+    price: "Rp. 1.250.000,00",
   },
   {
-    title: "Air Jordan 11 Concord",
-    description: "One of the most iconic Jordans of all time.",
+    title: "Kos Botania Garden",
+    description: "Botania, Belian, Kec. Batam Kota, Kota Batam, Kepulauan Riau 29462.",
     image: "https://i.imgur.com/jNahlD9.jpeg",
-    price: "$150",
+    price: "Rp. 950.000,00",
   },
   {
-    title: "Air Jordan 11 Concord",
-    description: "One of the most iconic Jordans of all time.",
+    title: "Kos Botania Garden",
+    description: "Botania, Belian, Kec. Batam Kota, Kota Batam, Kepulauan Riau 29462.",
     image: "https://i.imgur.com/jNahlD9.jpeg",
-    price: "$150",
+    price: "Rp. 950.000,00",
   },
 ];
 
@@ -61,7 +61,7 @@ export function BackgroundGradientDemo() {
             {/* Tombol original */}
             <div>
             <button className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
-              <span>Buy now</span>
+              <span>Booking now</span>
               <span className="bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white">
                 {product.price}
               </span>

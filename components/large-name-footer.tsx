@@ -10,15 +10,15 @@ function Footer() {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="mb-8 md:mb-0">
-            <Link href="/" className="flex items-center gap-2">
+            <Link href="https://wa.me/082268882235" className="flex items-center gap-2">
               <Icons.logo className="icon-class w-8" />
-              <h2 className="text-lg font-bold">Spectrum UI</h2>
+              <h2 className="text-lg font-bold">Properties</h2>
             </Link>
 
             <h1 className="dark:text-gray-300 mt-4">
               Build by{" "}
               <span className="dark:text-[#039ee4]">
-                <Link href="https://x.com/arihantCodes">@Arihantjain</Link>
+                <Link href="https://maps.app.goo.gl/BvdsB6HoYAB5qZtr6">Liban Group</Link>
               </span>
             </h1>
             <div className="mt-2">
@@ -39,50 +39,33 @@ function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link href="/docs" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
-                    Docs
+                    Home
                   </Link>
                 </li>
                 <li>
                   <Link href="/docs" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
-                    Components
+                    Properties
                   </Link>
                 </li>
                 <li>
-                  <Link href="/examples" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
-                    Examples
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/pricing" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
-                    Pricing
-                  </Link>
-                </li>
-                <li>
-                  <Link href="https://blog.arihant.us/" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
-                    Blog
+                  <Link href="https://wa.me/082268882235" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
+                    Conatact
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Socials</h3>
-              <ul className="space-y-2">
                 <li>
-                  <Link href="https://github.com/arihantcodes/spectrum-ui" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
-                    Github
+                  <Link href="https://wa.me/082268882235" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
+                    Contact
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://www.linkedin.com/in/arihantcodes" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
-                    LinkedIn
+                  <Link href="https://maps.app.goo.gl/BvdsB6HoYAB5qZtr6" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
+                    Maps
                   </Link>
                 </li>
-                <li>
-                  <Link href="https://x.com/arihantcodes" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
-                    X
-                  </Link>
-                </li>
-              </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Legal</h3>
