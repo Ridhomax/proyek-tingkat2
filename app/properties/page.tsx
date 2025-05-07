@@ -1,13 +1,12 @@
 import { FileUploadDemo } from "@/components/FileUploadDemo";
-import { ThreeDCardDemo } from "@/components2/ThreeDCardDemo";
+import { ThreeCardDemo } from "@/components2/ThreeCardDemo";
 
 
 
 export default function properties() {
   return (
     <main>
-      <ThreeDCardDemo/>
-      <FileUploadDemo/>
+      <ThreeCardDemo/>
     </main>
   );
 }

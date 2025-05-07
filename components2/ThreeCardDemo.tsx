@@ -3,7 +3,7 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components2/ui/3d-card";
 
-export function ThreeDCardDemo() {
+export function ThreeCardDemo() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-8 py-12">
       {/* Card 1 */}
