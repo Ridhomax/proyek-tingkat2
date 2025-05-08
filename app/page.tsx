@@ -28,15 +28,15 @@ export default function Home() {
   const navItems = [
     {
       name: "Home",
-      link: "#features",
+      link: "/",
     },
     {
       name: "Propoerties",
-      link: "#pricing",
+      link: "/properties",
     },
     {
       name: "Contact",
-      link: "#contact",
+      link: "/contact",
     },
   ];
 
@@ -49,10 +49,12 @@ export default function Home() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <Link href="/signup">
+            <Link href="/login">
               <NavbarButton variant="secondary">Login</NavbarButton>
             </Link>
-            <NavbarButton variant="primary">Book a call</NavbarButton>
+            <Link href={"/signup"}>
+            <NavbarButton variant="primary">Sign up</NavbarButton>
+            </Link>
           </div>
         </NavBody>
 
